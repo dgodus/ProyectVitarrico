@@ -1,0 +1,81 @@
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <aside class="menu">
+      
+      
+      <p class="menu-label">
+        Inicio
+        
+      </p>
+      <ul class="menu-list">
+        <li><a [routerLink]="['/materiaprima']">Materia Prima</a></li> 
+        <li><a [routerLink]="['/materiaempaque']">Material empaque</a></li>
+        <li><a [routerLink]="['/proveedor']">Proveedores</a></li>
+        <li><a>Ventas</a></li>
+        <li><a>Facturacion</a></li>
+        <li><a>Reportes</a></li>
+        <li><a>Administracion de Accesos</a></li>
+      </ul>
+      
+    </aside>
+  </div>
+  <!-- /#sidebar-wrapper -->
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Inicio
+          </a>
+    
+          <a class="navbar-item">
+            Documentation
+          </a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <router-outlet> </router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
