@@ -10,9 +10,14 @@ import { AgregarproveedorComponent } from './agregarproveedor/agregarproveedor.c
 import { ProveedorComponent } from './proveedor/proveedor.component';
 import { MateriaempaqueComponent } from './materiaempaque/materiaempaque.component';
 import { AgregarmateriaprimaComponent } from './agregarmateriaprima/agregarmateriaprima.component';
-import { MateriaprimadescripcionComponent} from './materiaprimadescripcion/materiaprimadescripcion.component';
-import { ProveedordetallesComponent} from './proveedordetalles/proveedordetalles.component';
-import { MaterialempaquedetallesComponent} from './materialempaquedetalles/materialempaquedetalles.component';
+import { MateriaprimadescripcionComponent } from './materiaprimadescripcion/materiaprimadescripcion.component';
+import { ProveedordetallesComponent } from './proveedordetalles/proveedordetalles.component';
+import { MaterialempaquedetallesComponent } from './materialempaquedetalles/materialempaquedetalles.component';
+import { CompramateriaenpaqueComponent } from  './compramateriaenpaque/compramateriaenpaque.component';
+import { AgregarmaterialempaqueComponent} from './agregarmaterialempaque/agregarmaterialempaque.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { AgregarusuarioComponent } from './agregarusuario/agregarusuario.component';
+
 const routes: Routes = [
    
   { path:'', component:LoginComponent },  //inicio
@@ -26,6 +31,11 @@ const routes: Routes = [
   { path: 'descripcionmateriaprima', component:MateriaprimadescripcionComponent },
   { path: 'proveedordetalle', component:ProveedordetallesComponent}, 
   { path: 'materialempaquedetalle', component:MaterialempaquedetallesComponent},
+  { path: 'compramateriaempaque', component:CompramateriaenpaqueComponent},
+  { path: 'agregarmaterialempaque', component:AgregarmaterialempaqueComponent}, //registro material empaque
+  { path: 'usuarios', component:UsuariosComponent},
+  { path: 'agregarusuario', component:AgregarusuarioComponent},
+
 ];
 
 @NgModule({

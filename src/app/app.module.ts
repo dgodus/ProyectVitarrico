@@ -18,6 +18,9 @@ import { AgregarmateriaprimaComponent } from './agregarmateriaprima/agregarmater
 import { MateriaprimadescripcionComponent } from './materiaprimadescripcion/materiaprimadescripcion.component';
 import { ProveedordetallesComponent } from './proveedordetalles/proveedordetalles.component';
 import { MaterialempaquedetallesComponent } from './materialempaquedetalles/materialempaquedetalles.component';
+import { CompramateriaenpaqueComponent } from './compramateriaenpaque/compramateriaenpaque.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { AgregarusuarioComponent } from './agregarusuario/agregarusuario.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,13 @@ import { MaterialempaquedetallesComponent } from './materialempaquedetalles/mate
   
     ProveedordetallesComponent,
   
-    MaterialempaquedetallesComponent
+    MaterialempaquedetallesComponent,
+  
+    CompramateriaenpaqueComponent,
+  
+    UsuariosComponent,
+  
+    AgregarusuarioComponent
   ],
   imports: [
     BrowserModule,

@@ -8,49 +8,40 @@
   
   
     <div class="card-header">
-      <h4 class="card-title"> Lista de Material Empaque</h4>
+      <h4 class="card-title"> Lista de Usuarios</h4>
     </div>
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong [routerLink]="['/agregarmaterialempaque']">  Agregar +</strong>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong [routerLink]="['/agregarproveedor']">  Agregar +</strong>
+              
+            </a>
             
-          </a>
-          
+          </div>
         </div>
       </div>
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong [routerLink]="['/compramateriaempaque']">  Comprar</strong>
-            
-          </a>
-          
-        </div>
-      </div>
-    </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table">
           <thead class=" text-primary">
             
             <th>
-              Nombre Producto
+              Nombre
             </th>
             
             <th >
-              Stock
+              Email
             </th>
               <th >
-               Descripcion
-              </th>              
-              <th class="text-right"> 
-                Descr
+               Rol
+              </th>
+              <th class="text-right">
+                Tipo
               </th>
               <th class="text-right"> 
-                Acciones
-               </th>
+              Autorizado
+              </th>
           </thead>
           <tbody>
             <tr>
@@ -69,7 +60,7 @@
               </td>
               <td class="text-right" >
                 <div class="text-right" >
-                  <button [routerLink]="['/materialempaquedetalle']" class="button is-info" style="margin: 2px">Ver detalles</button>
+                  <button [routerLink]="['/proveedordetalle']" class="button is-info" style="margin: 2px">Ver detalles</button>
                   <td>
                   </td >
                 </div>
@@ -166,5 +157,3 @@
   </div>
       
     </body>
-    
-
