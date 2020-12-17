@@ -11,6 +11,8 @@ import { ProveedorComponent } from './proveedor/proveedor.component';
 import { MateriaempaqueComponent } from './materiaempaque/materiaempaque.component';
 import { AgregarmateriaprimaComponent } from './agregarmateriaprima/agregarmateriaprima.component';
 import { MateriaprimadescripcionComponent} from './materiaprimadescripcion/materiaprimadescripcion.component';
+import { ProveedordetallesComponent} from './proveedordetalles/proveedordetalles.component';
+import { MaterialempaquedetallesComponent} from './materialempaquedetalles/materialempaquedetalles.component';
 const routes: Routes = [
    
   { path:'', component:LoginComponent },  //inicio
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'materiaempaque',component:MateriaempaqueComponent } ,
   { path: 'agregarmateriaprima' ,component:AgregarmateriaprimaComponent },
   { path: 'descripcionmateriaprima', component:MateriaprimadescripcionComponent },
+  { path: 'proveedordetalle', component:ProveedordetallesComponent}, 
+  { path: 'materialempaquedetalle', component:MaterialempaquedetallesComponent},
 ];
 
 @NgModule({

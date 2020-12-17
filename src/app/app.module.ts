@@ -16,6 +16,8 @@ import { AgregarmaterialempaqueComponent } from './agregarmaterialempaque/agrega
 import { MateriaprimadetallesComponent } from './materiaprimadetalles/materiaprimadetalles.component';
 import { AgregarmateriaprimaComponent } from './agregarmateriaprima/agregarmateriaprima.component';
 import { MateriaprimadescripcionComponent } from './materiaprimadescripcion/materiaprimadescripcion.component';
+import { ProveedordetallesComponent } from './proveedordetalles/proveedordetalles.component';
+import { MaterialempaquedetallesComponent } from './materialempaquedetalles/materialempaquedetalles.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,11 @@ import { MateriaprimadescripcionComponent } from './materiaprimadescripcion/mate
   
     AgregarmateriaprimaComponent,
   
-    MateriaprimadescripcionComponent
+    MateriaprimadescripcionComponent,
+  
+    ProveedordetallesComponent,
+  
+    MaterialempaquedetallesComponent
   ],
   imports: [
     BrowserModule,

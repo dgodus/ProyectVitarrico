@@ -1,63 +1,48 @@
 <html>
-    <header>
-
-    </header>
     
+ 
+
     <body>
        
 <div class="card">
+  
+  
     <div class="card-header">
-        <div>
-             
-        </div>
-      <h4 class="card-title"> Proveedor list</h4>
+      <h4 class="card-title"> Lista de Material Empaque</h4>
     </div>
     <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
             <a class="button is-primary">
-              <strong [routerLink]="['/agregarproducto']">  Agregar Materia Empaque</strong>
+              <strong [routerLink]="['/agregarmateriaprima']">  Agregar +</strong>
               
             </a>
             
           </div>
         </div>
+
       </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table">
           <thead class=" text-primary">
-            <th>
-              ID
-            </th>
+            
             <th>
               Nombre Producto
             </th>
-            <th>
-              Descripcion
+            
+            <th >
+              Stock
             </th>
-            <th class="text-right">
-              Detalle Producto
-            </th>
-            <th class="text-right">
-                proveedor
+              <th >
+               Medida
+              </th>              
+              <th class="text-right"> 
+                Descripcion
               </th>
-              <th class="text-right">
-                Cantidad
-              </th>
-              <th class="text-right">
-                Precio Unitario
-              </th>
-              <th class="text-right">
-                Precio Total
-              </th>
-             
-              <th class="text-right">
-                fecha
-              </th>
-              <th class="text-right">
-               Acciones
-              </th>
+              <th class="text-right"> 
+                Acciones
+               </th>
           </thead>
           <tbody>
             <tr>
@@ -68,42 +53,19 @@
                 Niger
               </td>
               <td>
-                Niger
-              </td>
-              <td>
                 Oud-Turnhout
-              </td>
-              <td>
-                Oud-Turnhout
-              </td><td>
-                arroz parmesano
               </td>
               
               <td class="text-right">
                 $36,738
               </td>
-              <td class="text-right">
-                $36,738
-              </td>
-              <td class="text-right">
-                $36,738
-              </td>
-              <td class="text-right">
-                $36,738 
-              </td>
-              
-              <td class="text-right">
-           
-              </td>
-              <td class="text-right">
-                <div class="table-responsive">
-                  
-                  <button class="button is-warning"> <a>Editar ___ </a> <a>Eliminar</a> </button>
-                  
+              <td class="text-right" >
+                <div class="text-right" >
+                  <button [routerLink]="['/materialempaquedetalle']" class="button is-info" style="margin: 2px">Ver detalles</button>
+                  <td>
+                  </td >
                 </div>
-                    
               </td>
-              
             </tr>
             <tr>
               <td>
@@ -196,4 +158,5 @@
   </div>
       
     </body>
-</html>
+    
+

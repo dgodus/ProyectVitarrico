@@ -1,19 +1,20 @@
 <html>
-    <header>
-
-    </header>
     
+ 
+
     <body>
        
 <div class="card">
+  
+  
     <div class="card-header">
-      <h4 class="card-title"> Proveedor list</h4>
+      <h4 class="card-title"> Lista de Proveedores</h4>
     </div>
     <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
             <a class="button is-primary">
-              <strong [routerLink]="['/agregarproveedor']">  Agregar Proveedor</strong>
+              <strong [routerLink]="['/agregarproveedor']">  Agregar +</strong>
               
             </a>
             
@@ -24,26 +25,22 @@
       <div class="table-responsive">
         <table class="table">
           <thead class=" text-primary">
+            
             <th>
-              ID
+              Nombre
             </th>
-            <th>
-              Nombre Empresa
+            
+            <th >
+              Ruc
             </th>
-            <th>
-              City
-            </th>
-            <th class="text-right">
-              Producto Ofrecido
-            </th>
-            <th class="text-right">
-                Estado
+              <th >
+                Direccion
               </th>
               <th class="text-right">
-                Fecha
+                Tipo
               </th>
-              <th class="text-right">
-                Acciones
+              <th class="text-right"> 
+              Ver detalles
               </th>
           </thead>
           <tbody>
@@ -61,19 +58,12 @@
               <td class="text-right">
                 $36,738
               </td>
-              <td class="text-right">
-                $36,738
-              </td>
-              <td class="text-right">
-                $36,738
-              </td>
-              <td class="text-right">
-                
-                    <a [routerLink]="['/editar-nombre']" class="btn btn-warning"> Editar</a>
-                    <a [routerLink]="['/editar-nombre']" class="btn btn-danger"> Eliminar</a>
-                    
-                    
-                
+              <td class="text-right" >
+                <div class="text-right" >
+                  <button [routerLink]="['/proveedordetalle']" class="button is-info" style="margin: 2px">Ver detalles</button>
+                  <td>
+                  </td >
+                </div>
               </td>
             </tr>
             <tr>
@@ -167,4 +157,4 @@
   </div>
       
     </body>
-</html>
+
