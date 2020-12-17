@@ -13,6 +13,9 @@ import { AgregarproveedorComponent } from './agregarproveedor/agregarproveedor.c
 import { ProveedorComponent } from './proveedor/proveedor.component';
 
 import { AgregarmaterialempaqueComponent } from './agregarmaterialempaque/agregarmaterialempaque.component';
+import { MateriaprimadetallesComponent } from './materiaprimadetalles/materiaprimadetalles.component';
+import { AgregarmateriaprimaComponent } from './agregarmateriaprima/agregarmateriaprima.component';
+import { MateriaprimadescripcionComponent } from './materiaprimadescripcion/materiaprimadescripcion.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,13 @@ import { AgregarmaterialempaqueComponent } from './agregarmaterialempaque/agrega
     AgregarproveedorComponent,
     ProveedorComponent,
   
-    AgregarmaterialempaqueComponent
+    AgregarmaterialempaqueComponent,
+  
+    MateriaprimadetallesComponent,
+  
+    AgregarmateriaprimaComponent,
+  
+    MateriaprimadescripcionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,29 @@
 <html>
-    <header>
-
-    </header>
     
+ 
+
     <body>
        
 <div class="card">
+  
+  
     <div class="card-header">
-      <h4 class="card-title"> Proveedor list</h4>
+      <h4 class="card-title"> Lista de Materia Prima</h4>
     </div>
     <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
             <a class="button is-primary">
-              <strong [routerLink]="['/agregarproducto']">  Agregar Materia Prima</strong>
+              <strong [routerLink]="['/agregarmateriaprima']">  Agregar +</strong>
+              
+            </a>
+            
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong [routerLink]="['/agregarproducto']">  Comprar</strong>
               
             </a>
             
@@ -24,34 +34,22 @@
       <div class="table-responsive">
         <table class="table">
           <thead class=" text-primary">
-            <th>
-              ID
-            </th>
+            
             <th>
               Nombre Producto
             </th>
-            <th>
-              Descripcion
+            
+            <th >
+              Stock
             </th>
-            <th class="text-right">
-              Detalle Producto
-            </th>
-            <th class="text-right">
-                proveedor
+              <th >
+                Disponible
               </th>
               <th class="text-right">
-                Cantidad
+                Imagen
               </th>
-              <th class="text-right">
-                Precio Unitario
-              </th>
-              <th class="text-right">
-                Precio Total
-              </th>
-              <th class="text-right">
-                fecha
-              </th>
-              <th class="text-right">
+              
+              <th class="text-right"> 
                Acciones
               </th>
           </thead>
@@ -70,30 +68,13 @@
               <td class="text-right">
                 $36,738
               </td>
-              <td class="text-right">
-                $36,738
-              </td>
-              <td class="text-right">
-                $36,738
-              </td>
-              <td class="text-right">
-                $36,738 
-              </td>
-              <td class="text-right">
-                $36,738 
-              </td>
-              <td class="text-right">
-                $36,738 
-              </td>
-              <td class="text-right">
-                <div class="table-responsive">
-                  
-                  <button class="button is-warning"> <a>Editar ___ </a> <a>Eliminar</a> </button>
-                  
+              <td class="text-right" >
+                <div class="text-right" >
+                  <button [routerLink]="['/descripcionmateriaprima']" class="button is-info" style="margin: 2px">Ver detalles</button>
+                  <td>
+                  </td >
                 </div>
-                    
               </td>
-              
             </tr>
             <tr>
               <td>
@@ -186,4 +167,99 @@
   </div>
       
     </body>
-</html>
+    <main class="column">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <div class="title">Balance</div>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <button type="button" class="button is-small">
+              March 8, 2019 - April 6, 2020
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columns is-multiline">
+        <div class="column">
+          <div class="box">
+            <div class="heading">Ventas</div>
+            <div class="title">56,950</div>
+            <div class="level">
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Sales $</div>
+                  <div class="title is-5">250,000</div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Overall $</div>
+                  <div class="title is-5">750,000</div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Sales %</div>
+                  <div class="title is-5">25%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="heading">Materia Prima</div>
+            <div class="title">55% / 45%</div>
+            <div class="level">
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Rev Prod $</div>
+                  <div class="title is-5">30%</div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Rev Serv $</div>
+                  <div class="title is-5">25%</div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Exp %</div>
+                  <div class="title is-5">45%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="heading">Produccion</div>
+            <div class="title">78% &uarr;</div>
+            <div class="level">
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Positive</div>
+                  <div class="title is-5">1560</div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Negative</div>
+                  <div class="title is-5">368</div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="">
+                  <div class="heading">Pos/Neg %</div>
+                  <div class="title is-5">77% / 23%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+

@@ -1,27 +1,29 @@
 <div class="form-group">
-    <label class="label">Agregar nueva Compra de Materia Prima</label>
+    <label class="label">Factura</label>
     
     
       <table class="table table-hover table-stripped"   > 
         <tr>
+            <th>Fecha</th>
+            <th>Nª Factura</th>
             <th>Proveedor</th>
-            <th>fecha</th>
-            <th>Nª compra</th>
-            <th>Agregar Productos</th>
-            <th>Acciones</th>
+            <th>Doc-completa</th>
+            <th>Observaciones</th>
+           
+            
         </tr>
     
         <tr  >
             <td > 
                 <div >
         
-                    <input class="input" type="text"  placeholder="e.g Alex Smith">
+                    <input class="input" type="date"  placeholder="e.g Alex Smith">
                   </div>
         </td>
         <td>
             <div>
         
-                <input class="input" type="date"  placeholder="e.g Alex Smith">
+                <input class="input" type="text"  placeholder="e.g Alex Smith">
               </div>
         </td>
         <td>
@@ -38,12 +40,11 @@
               </div>
            
         </td>
-        <td>
-            <a [routerLink]="['/editar-nombre']" class="btn btn-warning"> Editar</a>
-            <a [routerLink]="['/editar-nombre']" class="btn btn-danger"> Eliminar</a>
-            
-            
-            
+        <td >
+          <div >
+
+              <input class="input" type="number"  >
+            </div>
         </td>
         </tr>
     </table>
@@ -106,6 +107,7 @@
                                 <input class="input" type="number"  >
                               </div>
                           </td>
+                          
                         
                         </tr>
                         
@@ -130,4 +132,5 @@
             </div>
           </div>
           
-  </div>
+</div>
+
